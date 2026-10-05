@@ -1,0 +1,1 @@
+CREATE TABLE funnel_events (id uuid PRIMARY KEY DEFAULT gen_random_uuid(), created_at timestamptz NOT NULL DEFAULT now(), event_name text NOT NULL, host text, page_path text, source text, metadata jsonb)

@@ -1,0 +1,85 @@
+.frontier-lead-funnel{overflow-x:hidden;background:#fbfaf6}
+.frontier-lead-funnel .lead-hero,.frontier-lead-funnel .lead-form-wrap,.frontier-lead-funnel .lead-showcase,.frontier-lead-funnel .lead-plans,.frontier-lead-funnel .lead-offers,.frontier-lead-funnel .lead-client-stories,.frontier-lead-funnel .lead-faq,.frontier-lead-funnel .lead-bottom{position:relative;overflow:hidden}
+.frontier-lead-funnel .lead-hero:before,.frontier-lead-funnel .lead-showcase:before,.frontier-lead-funnel .lead-offers:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,#e86f5030 0,#e86f5000 68%);right:-160px;top:-180px;pointer-events:none}
+.frontier-lead-funnel .lead-form-wrap{background:#fff;border-radius:56px 56px 0 0;margin-top:-30px;z-index:2}
+.frontier-lead-funnel .lead-intent-strip{border-radius:0 0 48px 48px;overflow:hidden}
+.frontier-lead-funnel .lead-options label,.frontier-lead-funnel .lead-detail-grid label,.frontier-lead-funnel .lead-fields label{border-radius:22px}
+.frontier-lead-funnel .lead-options label{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.frontier-lead-funnel .lead-options label:hover{transform:translateY(-5px);box-shadow:0 16px 34px #173d3520}
+.frontier-lead-funnel .lead-form{border-radius:38px}
+.frontier-lead-funnel .lead-step{animation:frontierRise .65s cubic-bezier(.2,.75,.25,1)}
+@keyframes frontierRise{from{opacity:0;transform:translateY(22px) scale(.985)}to{opacity:1;transform:none}}
+@keyframes frontierFloat{0%,100%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(0,-9px,0) rotate(1deg)}}
+@keyframes frontierShimmer{0%{background-position:0 50%}100%{background-position:180% 50%}}
+.frontier-lead-funnel .lead-hero h1 em,.frontier-lead-funnel .lead-section-heading h2 em,.frontier-lead-funnel .lead-plans h2 em,.frontier-lead-funnel .lead-offers h2 em,.frontier-lead-funnel .lead-client-stories h2 em{background:linear-gradient(90deg,#e86f50,#0a3833,#e86f50);background-size:180% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:frontierShimmer 6s linear infinite}
+.frontier-lead-funnel .lead-hero-card{border-radius:44px;animation:frontierFloat 7s ease-in-out infinite}
+.frontier-lead-funnel .lead-deliverable-grid{background:transparent;border:0;gap:16px}
+.frontier-lead-funnel .lead-deliverable-grid article{border-radius:28px;min-height:190px;box-shadow:0 12px 32px #173d3510;transition:transform .35s ease,box-shadow .35s ease}
+.frontier-lead-funnel .lead-deliverable-grid article:hover{transform:translateY(-8px) rotate(-.5deg);box-shadow:0 22px 44px #173d3520}
+.frontier-lead-funnel .lead-process{border-radius:56px;margin:0 1.5vw}
+.frontier-lead-funnel .lead-fit{border-radius:56px;margin:24px 1.5vw}
+.frontier-lead-funnel .lead-fit-grid div{border-radius:26px;transition:transform .3s ease,background .3s ease}
+.frontier-lead-funnel .lead-fit-grid div:hover{transform:translateY(-6px);background:#f4f0e7}
+.frontier-lead-funnel .lead-faq{border-radius:56px 56px 0 0;margin:24px 1.5vw 0}
+.frontier-lead-funnel .lead-showcase{padding:110px 7vw;background:#f2eee5;border-radius:58px;margin:24px 1.5vw}
+.frontier-lead-funnel .service-curves{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:16px;align-items:stretch}
+.frontier-lead-funnel .service-pill{min-height:205px;background:#fff;border:1px solid #dfe4df;border-radius:44px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 14px 35px #173d3510;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s ease}
+.frontier-lead-funnel .service-pill:nth-child(2){border-radius:52px 28px 52px 28px}
+.frontier-lead-funnel .service-pill:nth-child(3){border-radius:28px 52px 28px 52px}
+.frontier-lead-funnel .service-pill:nth-child(4){border-radius:50px 50px 28px 28px}
+.frontier-lead-funnel .service-pill:hover{transform:translateY(-9px) rotate(.35deg);box-shadow:0 26px 48px #173d3520}
+.frontier-lead-funnel .service-pill>span{font-size:10px;font-weight:800;color:#e86f50}
+.frontier-lead-funnel .service-pill b{font:700 27px/1.05 "Playfair Display",Georgia,serif}
+.frontier-lead-funnel .service-pill p{font-size:13px;line-height:1.55;color:#687571;margin:10px 0 0}
+.frontier-lead-funnel .service-pill strong{align-self:flex-end;font-size:24px;color:#e86f50}
+.frontier-lead-funnel .lead-plans{padding:110px 7vw;background:#fff;border-radius:58px;margin:24px 1.5vw}
+.frontier-lead-funnel .lead-plans-head{max-width:620px;margin-bottom:42px}
+.frontier-lead-funnel .plan-ribbon{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.frontier-lead-funnel .plan-card{padding:34px;border:1px solid #dce2dd;border-radius:42px;background:#f8f7f2;min-height:285px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .35s ease,box-shadow .35s ease}
+.frontier-lead-funnel .plan-card:hover{transform:translateY(-8px);box-shadow:0 24px 48px #173d3518}
+.frontier-lead-funnel .plan-card.plan-featured{background:#0a3833;color:#fff;border-radius:54px 54px 30px 54px;transform:translateY(-16px) rotate(-.4deg)}
+.frontier-lead-funnel .plan-card.plan-featured:hover{transform:translateY(-23px) rotate(0)}
+.frontier-lead-funnel .plan-card span{font-size:9px;font-weight:800;letter-spacing:.16em;color:#e86f50}
+.frontier-lead-funnel .plan-card h3{font:800 38px "Playfair Display",Georgia,serif;margin:18px 0 8px}
+.frontier-lead-funnel .plan-card p{font-size:13px;line-height:1.6;color:#687571;margin:0}
+.frontier-lead-funnel .plan-featured p{color:#bfd0cb}
+.frontier-lead-funnel .plan-card a{font-size:11px;font-weight:800;color:#e86f50;margin-top:22px}
+.frontier-lead-funnel .lead-offers{display:grid;grid-template-columns:1fr 1fr;gap:8vw;padding:110px 7vw;background:#0a3833;color:#fff;border-radius:58px;margin:24px 1.5vw}
+.frontier-lead-funnel .lead-offers:before{background:radial-gradient(circle,#e86f5060 0,#e86f5000 68%);right:-130px;top:-180px}
+.frontier-lead-funnel .offer-copy h2{font:800 clamp(45px,5vw,70px)/.94 "Playfair Display",Georgia,serif;letter-spacing:-.05em;margin:16px 0}
+.frontier-lead-funnel .offer-copy p{color:#bfd0cb;max-width:600px;line-height:1.65}
+.frontier-lead-funnel .offer-stack{display:grid;gap:14px}
+.frontier-lead-funnel .offer-ticket{position:relative;background:#f7f3ea;color:#173d35;padding:25px 28px;border-radius:26px 52px 26px 52px;display:grid;grid-template-columns:35px 1fr;column-gap:14px;box-shadow:0 15px 35px #0002;transition:transform .35s ease}
+.frontier-lead-funnel .offer-ticket:hover{transform:translateX(8px) rotate(.5deg)}
+.frontier-lead-funnel .offer-ticket>span{color:#e86f50;font-size:10px;font-weight:800}
+.frontier-lead-funnel .offer-ticket b{font:700 22px "Playfair Display",Georgia,serif}
+.frontier-lead-funnel .offer-ticket small{grid-column:2;color:#687571;line-height:1.5;margin-top:5px}
+.frontier-lead-funnel .offer-ticket em{grid-column:2;margin-top:13px;font-style:normal;font-size:9px;font-weight:800;letter-spacing:.16em;color:#e86f50}
+.frontier-lead-funnel .lead-client-stories{padding:110px 7vw;background:#fbfaf6;border-radius:58px;margin:24px 1.5vw}
+.frontier-lead-funnel .client-story-rail{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.frontier-lead-funnel .client-story{padding:30px;background:#fff;border:1px solid #dfe4df;min-height:300px;border-radius:46px 28px 46px 28px;box-shadow:0 12px 30px #173d350b;transition:transform .35s ease}
+.frontier-lead-funnel .client-story:nth-child(2){border-radius:28px 46px 28px 46px;transform:translateY(20px)}
+.frontier-lead-funnel .client-story:nth-child(3){border-radius:50px 50px 28px 50px}
+.frontier-lead-funnel .client-story:hover{transform:translateY(-8px)}
+.frontier-lead-funnel .client-story:nth-child(2):hover{transform:translateY(12px)}
+.frontier-lead-funnel .client-story span{font-size:9px;letter-spacing:.15em;font-weight:800;color:#e86f50}
+.frontier-lead-funnel .client-story h3{font:700 28px/1.08 "Playfair Display",Georgia,serif;margin:35px 0 12px}
+.frontier-lead-funnel .client-story p{font-size:13px;line-height:1.6;color:#687571}
+.frontier-lead-funnel .client-story b{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#173d35}
+.frontier-lead-funnel .lead-promo-field{margin-top:16px;padding:18px 20px;background:#f7f3ea;border:1px dashed #cbd6d1;border-radius:24px;display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center}
+.frontier-lead-funnel .lead-promo-field label{display:grid;gap:8px;font-size:11px;font-weight:800;color:#43534e}
+.frontier-lead-funnel .lead-promo-field input{font:inherit;border:1px solid #d8dfdb;border-radius:999px;padding:14px 16px;background:#fff}
+.frontier-lead-funnel .lead-promo-field>span{font-size:11px;color:#687571;line-height:1.55}
+.frontier-lead-funnel .reveal-up{opacity:0;transform:translateY(24px)}
+.frontier-lead-funnel .reveal-up.is-visible{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+@media(max-width:900px){
+ .frontier-lead-funnel .service-curves,.frontier-lead-funnel .plan-ribbon,.frontier-lead-funnel .lead-offers,.frontier-lead-funnel .client-story-rail{grid-template-columns:1fr}
+ .frontier-lead-funnel .plan-card.plan-featured{transform:none}
+ .frontier-lead-funnel .client-story:nth-child(2){transform:none}
+ .frontier-lead-funnel .lead-promo-field{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+ .frontier-lead-funnel .lead-form-wrap,.frontier-lead-funnel .lead-showcase,.frontier-lead-funnel .lead-plans,.frontier-lead-funnel .lead-offers,.frontier-lead-funnel .lead-client-stories,.frontier-lead-funnel .lead-faq{border-radius:34px;margin-left:0;margin-right:0}
+ .frontier-lead-funnel .lead-showcase,.frontier-lead-funnel .lead-plans,.frontier-lead-funnel .lead-offers,.frontier-lead-funnel .lead-client-stories{padding:76px 6vw}
+ .frontier-lead-funnel .service-pill,.frontier-lead-funnel .plan-card,.frontier-lead-funnel .client-story{min-height:230px}
+}

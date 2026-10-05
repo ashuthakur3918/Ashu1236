@@ -1,0 +1,1 @@
+CREATE TABLE leads (id uuid PRIMARY KEY DEFAULT gen_random_uuid(), created_at timestamptz NOT NULL DEFAULT now(), name text NOT NULL, email text NOT NULL, instagram text, experience text, message text, source text, host text, page_path text, user_agent text, status text NOT NULL DEFAULT 'new')

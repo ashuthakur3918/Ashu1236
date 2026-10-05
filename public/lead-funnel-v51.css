@@ -1,0 +1,66 @@
+/* v51 — expanded lead conversion experience */
+.frontier-lead-funnel .lead-hero-actions{display:flex;gap:12px;align-items:center;margin:28px 0 5px;flex-wrap:wrap}
+.frontier-lead-funnel .lead-primary-cta{display:inline-flex;background:#e86f50;color:#fff!important;padding:14px 20px;border-radius:999px;font-size:12px;font-weight:800}
+.frontier-lead-funnel .lead-secondary-cta{display:inline-flex;border:1px solid #cbd5d0;padding:13px 18px;border-radius:999px;font-size:12px;font-weight:800}
+.frontier-lead-funnel .lead-proof{grid-template-columns:35px 1fr 35px 1fr 35px 1fr}
+.frontier-lead-funnel .lead-form-intro{text-align:center;max-width:700px;margin:0 auto 35px}
+.frontier-lead-funnel .lead-form-intro h2{font:800 clamp(42px,5vw,66px)/.95 "Playfair Display",Georgia,serif;letter-spacing:-.04em;margin:12px 0}
+.frontier-lead-funnel .lead-form-intro p{color:#71807b}
+.frontier-lead-funnel .lead-options-four{grid-template-columns:repeat(2,1fr)}
+.frontier-lead-funnel .lead-options span b{display:block;font-size:15px;margin-bottom:4px}
+.frontier-lead-funnel .lead-options span small{display:block;color:#74807c;font-weight:500;font-size:11px}
+.frontier-lead-funnel .lead-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.frontier-lead-funnel .lead-detail-grid label{display:grid;gap:8px;font-size:11px;font-weight:800;color:#43534e}
+.frontier-lead-funnel .lead-detail-grid select{font:inherit;border:1px solid #d8dfdb;border-radius:12px;padding:14px 15px;background:#fff;color:#16332f}
+.frontier-lead-funnel .lead-interest-cloud{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 28px}
+.frontier-lead-funnel .lead-interest-cloud label{display:block}
+.frontier-lead-funnel .lead-interest-cloud input{position:absolute;opacity:0}
+.frontier-lead-funnel .lead-interest-cloud span{display:block;border:1px solid #d7dfda;background:#fbfcfa;border-radius:999px;padding:11px 15px;font-size:12px;font-weight:700;cursor:pointer}
+.frontier-lead-funnel .lead-interest-cloud input:checked+span{background:#0a3833;color:#fff;border-color:#0a3833}
+.frontier-lead-funnel .lead-final-summary{background:#f6f3ec;border:1px solid #e0e4df;border-radius:18px;padding:18px;margin-top:22px;display:grid;gap:7px}
+.frontier-lead-funnel .lead-final-summary b{font-size:9px;letter-spacing:.14em;color:#e86f50}
+.frontier-lead-funnel .lead-final-summary span{font-size:12px;color:#4f605b}
+.frontier-lead-funnel .success-next-card{max-width:560px;margin:25px auto 0;background:#f6f3ec;border:1px solid #e0e4df;border-radius:18px;padding:20px;text-align:left;display:grid;gap:9px}
+.frontier-lead-funnel .success-next-card strong{font:700 21px "Playfair Display",Georgia,serif}
+.frontier-lead-funnel .success-next-card span{font-size:12px;color:#66736e}
+.frontier-lead-funnel .lead-deliverables{padding:100px 7vw;background:#f7f5ef}
+.frontier-lead-funnel .lead-section-heading{max-width:700px;margin-bottom:42px}
+.frontier-lead-funnel .lead-section-heading h2,.frontier-lead-funnel .lead-process h2,.frontier-lead-funnel .lead-fit h2,.frontier-lead-funnel .lead-faq h2{font:800 clamp(44px,5.5vw,72px)/.94 "Playfair Display",Georgia,serif;letter-spacing:-.05em;margin:15px 0}
+.frontier-lead-funnel .lead-section-heading p{max-width:600px;color:#687571}
+.frontier-lead-funnel .lead-deliverable-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d8dfdb;border:1px solid #d8dfdb}
+.frontier-lead-funnel .lead-deliverable-grid article{background:#fff;padding:27px;min-height:190px}
+.frontier-lead-funnel .lead-deliverable-grid b{font-size:10px;color:#e86f50}
+.frontier-lead-funnel .lead-deliverable-grid h3{font:700 25px "Playfair Display",Georgia,serif;margin:20px 0 8px}
+.frontier-lead-funnel .lead-deliverable-grid p{font-size:13px;color:#697671;line-height:1.55;margin:0}
+.frontier-lead-funnel .lead-process{padding:100px 7vw;background:#0a3833;color:#fff;display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw}
+.frontier-lead-funnel .lead-process h2{color:#fff}
+.frontier-lead-funnel .lead-process h2 em{color:#f08a6b}
+.frontier-lead-funnel .lead-process-list{display:grid;gap:0}
+.frontier-lead-funnel .lead-process-list div{display:grid;grid-template-columns:45px 180px 1fr;gap:12px;border-top:1px solid #ffffff25;padding:18px 0;align-items:start}
+.frontier-lead-funnel .lead-process-list b{font-size:10px;color:#f08a6b}
+.frontier-lead-funnel .lead-process-list strong{font:700 19px "Playfair Display",Georgia,serif}
+.frontier-lead-funnel .lead-process-list span{font-size:12px;line-height:1.5;color:#bed0cb}
+.frontier-lead-funnel .lead-fit{padding:100px 7vw;background:#fff;display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw}
+.frontier-lead-funnel .lead-fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.frontier-lead-funnel .lead-fit-grid div{border:1px solid #d9dfdb;padding:25px;background:#fbfcfa}
+.frontier-lead-funnel .lead-fit-grid strong{font:700 23px "Playfair Display",Georgia,serif}
+.frontier-lead-funnel .lead-fit-grid p{font-size:13px;color:#687571;line-height:1.55}
+.frontier-lead-funnel .lead-fit-grid a{font-size:11px;font-weight:800;color:#e86f50}
+.frontier-lead-funnel .lead-faq{padding:100px 7vw;background:#f6f3ec;display:grid;grid-template-columns:.75fr 1.25fr;gap:8vw}
+.frontier-lead-funnel .lead-faq-list details{border-top:1px solid #cfd7d2;padding:18px 0}
+.frontier-lead-funnel .lead-faq-list summary{cursor:pointer;font-weight:800;font-size:14px}
+.frontier-lead-funnel .lead-faq-list p{font-size:13px;line-height:1.6;color:#687571;max-width:700px;margin:12px 0 0}
+.frontier-lead-funnel .lead-bottom-copy{max-width:650px;color:#bfd1cc;line-height:1.6;margin:0 0 28px}
+.frontier-lead-funnel .lead-primary-cta.light{background:#fff;color:#0a3833!important}
+@media(max-width:900px){
+ .frontier-lead-funnel .lead-proof{grid-template-columns:30px 1fr}
+ .frontier-lead-funnel .lead-detail-grid,.frontier-lead-funnel .lead-deliverable-grid,.frontier-lead-funnel .lead-process,.frontier-lead-funnel .lead-fit,.frontier-lead-funnel .lead-faq{grid-template-columns:1fr}
+ .frontier-lead-funnel .lead-deliverable-grid{gap:0}
+ .frontier-lead-funnel .lead-process-list div{grid-template-columns:35px 1fr}
+ .frontier-lead-funnel .lead-process-list span{grid-column:2}
+ .frontier-lead-funnel .lead-fit-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+ .frontier-lead-funnel .lead-options-four{grid-template-columns:1fr}
+ .frontier-lead-funnel .lead-deliverables,.frontier-lead-funnel .lead-process,.frontier-lead-funnel .lead-fit,.frontier-lead-funnel .lead-faq{padding:70px 6vw}
+}

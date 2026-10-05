@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Build a detailed Frontier trip, group or travel-partner enquiry. Share your destination, dates, budget, requirements and contact preference.">
+<title>Build Your Trip Enquiry — Frontier World</title>
+<link rel="stylesheet" href="/lead-funnel-v51.css"><link rel="stylesheet" href="/lead-funnel-v52.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="frontier-lead-funnel">
+<header class="lead-nav">
+  <a href="/" class="world-brand"><span class="brand-icon">✦</span><span>FRONTIER <b>WORLD</b></span></a>
+  <span>Custom trip desk</span>
+  <a href="/">Back to Frontier →</a>
+</header>
+<main>
+<section class="lead-hero">
+  <div class="lead-hero-copy">
+    <span class="dmo-eyebrow dark">CUSTOM TRIP • GROUP • PARTNER ENQUIRY</span>
+    <h1>Don’t just <em>contact us.</em><br>Tell us the trip.</h1>
+    <p>Build a useful enquiry in a few focused steps. Frontier captures the context needed to understand what you are looking for — whether that is a personal journey, group programme, corporate trip or travel-partner requirement.</p>
+    <div class="lead-hero-actions">
+      <a href="#trip-form" class="lead-primary-cta">Build my enquiry →</a>
+      <a href="#how-it-works" class="lead-secondary-cta">See how it works</a>
+    </div>
+    <div class="lead-proof">
+      <span>01</span><div><strong>Qualify the request</strong><small>Who is travelling, what you need and how far along the plan is.</small></div>
+      <span>02</span><div><strong>Capture the trip context</strong><small>Destination, dates, budget, logistics and priorities.</small></div>
+      <span>03</span><div><strong>Route the follow-up</strong><small>Contact details and preferred response channel complete the enquiry.</small></div>
+    </div>
+  </div>
+  <div class="lead-hero-card">
+    <div class="lead-card-image"></div>
+    <div><small>FRONTIER CUSTOM TRAVEL DESK</small><strong>From rough idea to a clearer brief.</strong><p>A structured request is easier to review than a generic “tell us more” message.</p></div>
+  </div>
+</section>
+<section class="lead-intent-strip">
+  <div><b>PERSONAL TRIPS</b><span>Build around your pace, interests, dates, destination and comfort level.</span></div>
+  <div><b>GROUPS & CORPORATE</b><span>Share group size, programme requirements, logistics and budget context.</span></div>
+  <div><b>TRAVEL PARTNERS</b><span>Describe agency, DMC, repeat-business or destination-support requirements.</span></div>
+</section>
+<section class="lead-form-wrap" id="trip-form">
+  <div class="lead-form-intro">
+    <span class="dmo-eyebrow dark">YOUR TRIP BRIEF</span>
+    <h2>Build the request.</h2>
+    <p>There is no need to know every answer. Use “not decided yet” or explain the requirement in your own words where needed.</p>
+  </div>
+  <div class="lead-progress" aria-label="Form progress">
+    <span class="active" data-step-dot="1">1</span><i></i><span data-step-dot="2">2</span><i></i><span data-step-dot="3">3</span><i></i><span data-step-dot="4">4</span><i></i><span data-step-dot="5">✓</span>
+  </div>
+  <form id="leadFunnelForm" class="lead-form">
+    <div class="lead-step active" data-step="1">
+      <span class="dmo-eyebrow dark">STEP 1 OF 4</span>
+      <h2>Who is this enquiry for?</h2><p>Start with the audience so the rest of the brief can adapt to you.</p>
+      <div class="lead-options lead-options-four">
+        <label><input name="lead_type" value="Leisure traveller" type="radio"><span><b>Personal trip</b><small>Solo, couple or family</small></span></label>
+        <label><input name="lead_type" value="Group organiser" type="radio"><span><b>Group / event</b><small>Friends, clubs, celebrations</small></span></label>
+        <label><input name="lead_type" value="Travel agency / DMC" type="radio"><span><b>Agency / DMC</b><small>Partner or repeat business</small></span></label>
+        <label><input name="lead_type" value="Corporate travel buyer" type="radio"><span><b>Corporate</b><small>Meetings, teams or work travel</small></span></label>
+      </div>
+      <div class="lead-fields two">
+        <label>Travel style<select name="travel_style" required><option value="">Choose</option><option>Relaxed escape</option><option>Adventure</option><option>Culture & food</option><option>Family trip</option><option>Road trip</option><option>Workation</option><option>Wellness / slow travel</option><option>Photography / creative</option><option>Custom / mixed</option></select></label>
+        <label>Where are you starting from?<input name="starting_location" placeholder="City / country"></label>
+      </div>
+      <div class="lead-fields two">
+        <label>Travellers / group size<select name="group_size"><option value="">Select</option><option>1</option><option>2</option><option>3–4</option><option>5–8</option><option>9–20</option><option>21–50</option><option>51+</option></select></label>
+        <label>Planning stage<select name="planning_stage"><option value="">Choose</option><option>Just exploring</option><option>Shortlisting options</option><option>Dates are mostly fixed</option><option>Ready to discuss details</option><option>Repeat / ongoing requirement</option></select></label>
+      </div>
+      <div id="businessFields" class="lead-fields two lead-conditional" hidden>
+        <label>Company / agency name<input name="company_name" placeholder="Organisation name"></label>
+        <label>Business type<select name="agency_type"><option value="">Choose</option><option>Travel agency</option><option>DMC</option><option>Corporate</option><option>Event / group organiser</option><option>Other</option></select></label>
+      </div>
+      <button type="button" class="lead-next">Continue to trip details →</button>
+    </div>
+    <div class="lead-step" data-step="2">
+      <span class="dmo-eyebrow dark">STEP 2 OF 4</span>
+      <h2>What should we plan?</h2><p>Give us the destination and timing. Flexibility is completely fine.</p>
+      <div class="lead-fields">
+        <label>Destination / itinerary<input name="experience" placeholder="Destination, region, itinerary or “not sure yet”" required></label>
+        <div class="lead-fields two">
+          <label>Start date<input name="start_date" type="date"></label>
+          <label>End date<input name="end_date" type="date"></label>
+        </div>
+        <label>Date flexibility<select name="date_flexibility"><option value="">Choose</option><option>Dates are fixed</option><option>± 2–3 days</option><option>± 1 week</option><option>Month is flexible</option><option>Not decided yet</option></select></label>
+        <label>Budget range<select name="budget"><option value="">Choose a range</option><option>Budget-conscious</option><option>Comfort</option><option>Premium</option><option>Flexible / please advise</option><option>Not decided yet</option></select></label>
+      </div>
+      <div class="lead-detail-grid">
+        <label>Accommodation<select name="accommodation"><option value="">Any / advise me</option><option>Simple / budget</option><option>Comfortable hotels</option><option>Boutique / character stays</option><option>Premium / luxury</option><option>Mix of stays</option></select></label>
+        <label>Transport<select name="transport"><option value="">Any / advise me</option><option>Self-drive</option><option>Private vehicle</option><option>Shared transport</option><option>Public transport</option><option>Mixed</option></select></label>
+      </div>
+      <div class="lead-actions"><button type="button" class="lead-back">← Back</button><button type="button" class="lead-next">Continue to requirements →</button></div>
+    </div>
+    <div class="lead-step" data-step="3">
+      <span class="dmo-eyebrow dark">STEP 3 OF 4</span>
+      <h2>What matters most?</h2><p>This is where a generic enquiry becomes a useful travel brief.</p>
+      <div class="lead-interest-cloud">
+        <label><input type="checkbox" name="priority_tags" value="Nature"><span>Nature</span></label>
+        <label><input type="checkbox" name="priority_tags" value="Food"><span>Food</span></label>
+        <label><input type="checkbox" name="priority_tags" value="Culture"><span>Culture</span></label>
+        <label><input type="checkbox" name="priority_tags" value="Photography"><span>Photography</span></label>
+        <label><input type="checkbox" name="priority_tags" value="Easy walks"><span>Easy walks</span></label>
+        <label><input type="checkbox" name="priority_tags" value="Adventure"><span>Adventure</span></label>
+        <label><input type="checkbox" name="priority_tags" value="Quiet places"><span>Quiet places</span></label>
+        <label><input type="checkbox" name="priority_tags" value="Family friendly"><span>Family friendly</span></label>
+        <label><input type="checkbox" name="priority_tags" value="Work / meetings"><span>Work / meetings</span></label>
+        <label><input type="checkbox" name="priority_tags" value="Accessibility"><span>Accessibility</span></label>
+      </div>
+      <div class="lead-fields">
+        <label>Interests / priorities<input name="interests" placeholder="Add anything important that is not listed above"></label>
+        <label>Requirements & context<textarea name="message" rows="6" placeholder="Tell us what you need: preferred itinerary, accommodation level, transport, food, accessibility, event requirements, children, senior travellers, meeting needs, photography goals, or anything else that should shape the request."></textarea></label>
+      </div>
+      <div class="lead-actions"><button type="button" class="lead-back">← Back</button><button type="button" class="lead-next">Continue to contact →</button></div>
+    </div>
+    <div class="lead-step" data-step="4">
+      <span class="dmo-eyebrow dark">STEP 4 OF 4</span>
+      <h2>Where should we send the follow-up?</h2><p>Choose how you would prefer the conversation to continue.</p>
+      <div class="lead-fields two">
+        <label>Your name<input name="name" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+      </div>
+      <div class="lead-fields two">
+        <label>Phone / WhatsApp <small>optional</small><input name="phone" autocomplete="tel" placeholder="+91…"></label>
+        <label>Preferred contact<select name="contact_preference"><option value="">Email is fine</option><option>Email</option><option>Phone</option><option>WhatsApp</option></select></label>
+      </div>
+      <div class="lead-promo-field">
+        <label>Voucher / partner / campaign code <small>optional</small><input name="promo_code" autocomplete="off" placeholder="Have a code? Add it here"></label>
+        <span>Already have a Frontier, partner or campaign code? Include it with the enquiry so it stays attached to the brief.</span>
+      </div>
+      <div class="lead-final-summary" id="leadFinalSummary"></div>
+      <label class="lead-consent"><input type="checkbox" required> <span>I’m happy for Frontier to use these details to respond to this travel enquiry.</span></label>
+      <div class="lead-actions"><button type="button" class="lead-back">← Back</button><button type="submit" class="lead-submit">Submit my trip enquiry →</button></div>
+      <p class="lead-note">Submitting an enquiry does not make a booking. Availability, prices, permits and current travel conditions should be verified before travel.</p>
+    </div>
+    <div class="lead-step lead-success" data-step="5">
+      <div class="success-mark">✓</div><span class="dmo-eyebrow dark">ENQUIRY RECEIVED</span>
+      <h2>Your trip brief is<br><em>on its way.</em></h2>
+      <p id="leadSuccessText">Thanks. Your enquiry has been received.</p>
+      <div class="success-next-card"><strong>What happens next</strong><span>1. Your request is recorded with its trip context.</span><span>2. The enquiry can be reviewed with its destination, timing and requirements.</span><span>3. Follow-up can continue through the contact details you provided.</span></div>
+      <div class="success-actions"><a href="/plan.html">Open trip planner →</a><a href="/destinations.html">Keep exploring</a></div>
+    </div>
+  </form>
+</section>
+<section class="lead-deliverables" id="how-it-works">
+  <div class="lead-section-heading"><span class="dmo-eyebrow dark">WHAT THIS BRIEF COVERS</span><h2>More than a contact form.</h2><p>The goal is to give the follow-up enough context to be useful without forcing every visitor into the same questionnaire.</p></div>
+  <div class="lead-deliverable-grid">
+    <article><b>01</b><h3>Trip intent</h3><p>Personal, group, corporate or partner enquiry, plus travel style and planning stage.</p></article>
+    <article><b>02</b><h3>Trip parameters</h3><p>Destination, dates, flexibility, group size, budget and starting point.</p></article>
+    <article><b>03</b><h3>Logistics</h3><p>Accommodation and transport preferences so the request has practical context.</p></article>
+    <article><b>04</b><h3>Priorities</h3><p>Interests and requirements such as food, nature, photography, accessibility or meetings.</p></article>
+    <article><b>05</b><h3>Contact route</h3><p>Name, email, optional phone/WhatsApp and preferred contact channel.</p></article>
+    <article><b>06</b><h3>Clear status</h3><p>A confirmation explains that an enquiry has been received and is not itself a booking.</p></article>
+  </div>
+</section>
+<section class="lead-process">
+  <div><span class="dmo-eyebrow">HOW THE CONVERSION PATH WORKS</span><h2>From visitor<br>to <em>qualified enquiry.</em></h2></div>
+  <div class="lead-process-list">
+    <div><b>01</b><strong>Landing page</strong><span>The visitor sees a specific action: build a trip enquiry or request a quote.</span></div>
+    <div><b>02</b><strong>Form view</strong><span>The brief explains what information will be requested and why.</span></div>
+    <div><b>03</b><strong>Form start</strong><span>Progressive steps reduce the need to confront every field at once.</span></div>
+    <div><b>04</b><strong>Lead completion</strong><span>The submitted request carries trip and contact context together.</span></div>
+    <div><b>05</b><strong>Follow-up</strong><span>The next business step is to review, route and respond to the enquiry.</span></div>
+  </div>
+</section>
+<section class="lead-fit">
+  <div><span class="dmo-eyebrow dark">WHEN TO USE THIS FUNNEL</span><h2>One path.<br><em>Several audiences.</em></h2></div>
+  <div class="lead-fit-grid">
+    <div><strong>Custom itinerary</strong><p>Someone knows roughly where they want to go but needs help shaping the trip.</p><a href="#trip-form">Start an enquiry →</a></div>
+    <div><strong>Group travel</strong><p>A group organiser needs to communicate size, dates, programme needs and budget context.</p><a href="#trip-form">Plan a group →</a></div>
+    <div><strong>Agency / DMC</strong><p>A travel business needs a structured route to explain a partnership or repeat requirement.</p><a href="#trip-form">Start a partner enquiry →</a></div>
+    <div><strong>Corporate travel</strong><p>A buyer needs to describe meetings, team travel, accommodation and transport requirements.</p><a href="#trip-form">Build the brief →</a></div>
+  </div>
+</section>
+<section class="lead-showcase" id="services">
+  <div class="showcase-orbit"></div>
+  <div class="lead-section-heading reveal-up"><span class="dmo-eyebrow dark">THE FRONTIER TRIP DESK</span><h2>Not a template.<br><em>A trip shaped around you.</em></h2><p>Use the brief when you need more than a generic contact box: destination thinking, stay selection, transport planning, experiences, group logistics and a clearer route from idea to itinerary.</p></div>
+  <div class="service-curves">
+    <article class="service-pill service-wide reveal-up"><span>01</span><div><b>Destination design</b><p>Turn a place, a mood or a rough route into a more considered travel brief.</p></div><strong>↗</strong></article>
+    <article class="service-pill reveal-up"><span>02</span><div><b>Stays &amp; experiences</b><p>Share the comfort level, interests and pace that should shape the shortlist.</p></div></article>
+    <article class="service-pill reveal-up"><span>03</span><div><b>Roads &amp; transport</b><p>Capture vehicle, transfer and mobility preferences before the follow-up.</p></div></article>
+    <article class="service-pill reveal-up"><span>04</span><div><b>Groups &amp; corporate</b><p>Keep programme, size, meetings and practical requirements together.</p></div></article>
+  </div>
+</section>
+<section class="lead-plans" id="plans">
+  <div class="lead-plans-head reveal-up"><span class="dmo-eyebrow">CHOOSE YOUR LEVEL OF HELP</span><h2>Three ways to<br><em>start the journey.</em></h2></div>
+  <div class="plan-ribbon">
+    <article class="plan-card reveal-up"><span>THE START</span><h3>Explore</h3><p>For the early-stage idea: destination, mood, rough timing and what you want to experience.</p><a href="#trip-form">Start exploring →</a></article>
+    <article class="plan-card plan-featured reveal-up"><span>THE MIDDLE</span><h3>Curate</h3><p>For travellers who know the direction and want a more useful brief around stays, transport and priorities.</p><a href="#trip-form">Build my brief →</a></article>
+    <article class="plan-card reveal-up"><span>THE DETAIL</span><h3>Bespoke</h3><p>For complex trips, groups, agencies or corporate requirements that need fuller context.</p><a href="#trip-form">Request a bespoke conversation →</a></article>
+  </div>
+</section>
+<section class="lead-offers" id="offers">
+  <div class="offer-copy reveal-up"><span class="dmo-eyebrow dark">OFFERS • VOUCHERS • CAMPAIGNS</span><h2>Bring the code.<br><em>Keep the context.</em></h2><p>Have a partner voucher, campaign code or special enquiry reference? Add it to the form so the code travels with your trip brief instead of living in a separate message.</p><a href="#trip-form" class="lead-primary-cta">Add a code to my enquiry →</a></div>
+  <div class="offer-stack">
+    <div class="offer-ticket reveal-up"><span>01</span><b>Partner / campaign code</b><small>Attach an existing code or reference to the enquiry.</small><em>CODE + BRIEF</em></div>
+    <div class="offer-ticket reveal-up"><span>02</span><b>Group &amp; repeat travel</b><small>Use the enquiry to explain the programme before discussing the details.</small><em>GROUP CONTEXT</em></div>
+    <div class="offer-ticket reveal-up"><span>03</span><b>Seasonal planning</b><small>Tell us when you are considering travel and how flexible you can be.</small><em>DATE FLEXIBILITY</em></div>
+  </div>
+</section>
+<section class="lead-client-stories" id="client-stories">
+  <div class="lead-section-heading reveal-up"><span class="dmo-eyebrow dark">CLIENT STORIES • FEEDBACK • USE CASES</span><h2>Make the brief feel<br><em>human.</em></h2><p>Real client reviews can be published here as verified feedback. Until those are supplied, this section focuses on the situations the enquiry is designed to handle rather than inventing testimonials.</p></div>
+  <div class="client-story-rail">
+    <article class="client-story reveal-up"><span>LEISURE</span><h3>“We know the feeling, not the itinerary.”</h3><p>Start with interests, pace, budget and destination ideas. The form turns the loose thought into a clearer conversation starter.</p><b>Trip brief use case</b></article>
+    <article class="client-story reveal-up"><span>GROUP</span><h3>“Everyone needs the same page.”</h3><p>Group size, programme needs, transport and comfort preferences can travel together in one structured request.</p><b>Group planning use case</b></article>
+    <article class="client-story reveal-up"><span>PARTNER</span><h3>“Give the next person the context.”</h3><p>Agencies, DMCs and corporate buyers can add organisation details and practical requirements before follow-up.</p><b>Partner use case</b></article>
+  </div>
+</section>
+<section class="lead-faq">
+  <div><span class="dmo-eyebrow">QUESTIONS BEFORE YOU START</span><h2>Not sure what to enter?</h2></div>
+  <div class="lead-faq-list">
+    <details open><summary>Do I need exact dates?</summary><p>No. The form includes flexibility options, so you can submit an approximate period or say that dates are not decided yet.</p></details>
+    <details><summary>What if I do not know the destination?</summary><p>Use “not sure yet” in the destination field and explain the kind of trip you want in the requirements box.</p></details>
+    <details><summary>Is this a booking?</summary><p>No. This is an enquiry. Prices, availability, permits and current travel conditions should be verified before travel.</p></details>
+    <details><summary>Can groups and businesses use it?</summary><p>Yes. The funnel captures different enquiry types and adds company or agency context when relevant.</p></details>
+    <details><summary>How much detail should I provide?</summary><p>Enough to explain what matters. The most useful context is usually destination, dates or flexibility, group size, budget and specific requirements.</p></details>
+  </div>
+</section>
+<section class="lead-bottom">
+  <span class="dmo-eyebrow">FRONTIER TRIP DESK</span><h2>Bring the rough idea.<br><em>Build the useful brief.</em></h2>
+  <p class="lead-bottom-copy">A good enquiry is not about asking for everything. It is about capturing the information that helps the next conversation start in the right place.</p>
+  <a href="#trip-form" class="lead-primary-cta light">Build my enquiry →</a>
+</section>
+</main>
+<script>
+(function(){
+ const form=document.getElementById("leadFunnelForm"),steps=[...document.querySelectorAll(".lead-step")],dots=[...document.querySelectorAll("[data-step-dot]")],business=document.getElementById("businessFields"),summary=document.getElementById("leadFinalSummary");let current=1;
+ const track=(name,metadata={})=>{fetch("/api/event",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({event_name:name,host:"Frontier World",page_path:"/lead-funnel.html",source:"lead_funnel",metadata})}).catch(()=>{});};
+ function selectedTags(){return [...form.querySelectorAll('input[name="priority_tags"]:checked')].map(x=>x.value);}
+ function buildSummary(){const d=Object.fromEntries(new FormData(form).entries());const tags=selectedTags();summary.innerHTML='<b>YOUR BRIEF SO FAR</b><span>'+escapeHtml(d.lead_type||"Travel enquiry")+' · '+escapeHtml(d.experience||"Destination not set")+'</span><span>'+escapeHtml(d.group_size||"Group size not set")+' travellers · '+escapeHtml(d.budget||"Budget not set")+'</span><span>'+escapeHtml(tags.length?tags.join(", "):(d.interests||"Priorities not set"))+'</span>'; }
+ function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
+ function show(n){current=n;steps.forEach(s=>s.classList.toggle("active",s.dataset.step==n));dots.forEach(d=>d.classList.toggle("active",Number(d.dataset.stepDot)<=n));if(n===4)buildSummary();document.getElementById("trip-form").scrollIntoView({behavior:"smooth",block:"start"});track("lead_funnel_step_view",{step:n});}
+ function validateStep(n){const step=steps.find(s=>s.dataset.step==n),required=[...step.querySelectorAll("[required]")];for(const el of required){if(!el.checkValidity()){el.reportValidity();return false;}}if(n===1&&!form.querySelector('input[name="lead_type"]:checked')){alert("Choose who the enquiry is for first.");return false;}return true;}
+ document.querySelectorAll('input[name="lead_type"]').forEach(el=>el.addEventListener("change",()=>{business.hidden=!["Group organiser","Travel agency / DMC","Corporate travel buyer"].includes(el.value);}));
+ document.querySelectorAll(".lead-next").forEach(btn=>btn.addEventListener("click",()=>{if(validateStep(current)){track("lead_funnel_form_start",{step:current});show(current+1);}}));
+ document.querySelectorAll(".lead-back").forEach(btn=>btn.addEventListener("click",()=>show(Math.max(1,current-1))));
+ track("lead_funnel_view");
+ const revealObserver=new IntersectionObserver((entries)=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");revealObserver.unobserve(entry.target);}}),{threshold:.12});
+ document.querySelectorAll(".reveal-up").forEach(el=>revealObserver.observe(el));
+ form.addEventListener("submit",async function(e){e.preventDefault();if(!validateStep(4))return;const data=Object.fromEntries(new FormData(form).entries());data.priority_tags=selectedTags().join(", ");data.host="Frontier World";data.page_path="/lead-funnel.html";data.trip_source="lead_funnel";data.source=new URLSearchParams(location.search).get("utm_source")||"lead_funnel";try{const r=await fetch("/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}),j=await r.json();if(!r.ok||!j.ok)throw new Error(j.error||"Request failed");track("lead_funnel_completion",{lead_type:data.lead_type,group_size:data.group_size,budget:data.budget,planning_stage:data.planning_stage,contact_preference:data.contact_preference});document.getElementById("leadSuccessText").textContent="Thanks, "+data.name+". Your "+(data.lead_type||"travel")+" enquiry is in with the trip context you provided.";show(5);}catch(err){alert(err.message||"Something went wrong. Please try again.");}});
+})();
+</script>
+</body></html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Convert travel money between major currencies and understand exchange rates, cash and card costs before a trip.">
+<meta name="theme-color" content="#0b2d2a">
+<meta property="og:title" content="Currency Converter — Frontier World">
+<meta property="og:description" content="Convert travel money and understand exchange rates before you go.">
+<link rel="canonical" href="https://frontier-host.hatchable.site/currency.html">
+<title>Currency Converter — Frontier World</title>
+<style>
+.currency-wrap{max-width:1180px;margin:0 auto;padding:70px 6vw 100px}
+.currency-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:start}
+.currency-card{background:#f5f1e8;border:1px solid #d9dfdb;border-radius:32px;padding:34px}
+.currency-card h2{font:700 clamp(30px,4vw,48px)/1 "Playfair Display",Georgia,serif;margin:10px 0 24px;color:#17332f}
+.currency-form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.currency-form label{display:grid;gap:7px;font-size:10px;font-weight:800;letter-spacing:.1em;color:#687570}
+.currency-form input,.currency-form select{width:100%;box-sizing:border-box;border:1px solid #cfd8d3;background:#fff;color:#17332f;border-radius:12px;padding:15px;font:600 14px "DM Sans",sans-serif}
+.currency-amount{grid-column:1/-1}
+.currency-result{margin-top:20px;background:#0b3833;color:#fff;border-radius:22px;padding:24px}
+.currency-result small{display:block;opacity:.72;text-transform:uppercase;letter-spacing:.1em;font-size:9px}
+.currency-result strong{display:block;font:700 clamp(32px,5vw,58px)/1 "Playfair Display",Georgia,serif;margin-top:8px}
+.currency-meta{margin-top:8px;font-size:11px;color:#cbd8d4}
+.currency-actions{display:flex;gap:10px;margin-top:15px;flex-wrap:wrap}
+.currency-actions button{border:0;border-radius:10px;padding:13px 18px;background:#e86f50;color:#fff;font-weight:800;cursor:pointer}
+.currency-actions button.secondary{background:#fff;color:#17332f;border:1px solid #ccd6d1}
+.currency-rate-list{display:grid;gap:10px;margin-top:18px}
+.currency-rate{display:flex;justify-content:space-between;gap:15px;padding:15px 0;border-bottom:1px solid #d7ddd8;font-size:13px}
+.currency-note{font-size:11px;line-height:1.6;color:#6c7873;margin-top:18px}
+.currency-status{font-size:11px;margin-top:12px;color:#6c7873}
+.currency-quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.currency-quick button{border:1px solid #cfd8d3;background:#fff;border-radius:999px;padding:8px 12px;color:#17332f;cursor:pointer}
+@media(max-width:800px){.currency-grid{grid-template-columns:1fr}.currency-wrap{padding-top:48px}.currency-form{grid-template-columns:1fr}.currency-amount{grid-column:auto}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<main id="main-content">
+<section class="page-hero"><div><p class="eyebrow">MONEY · CURRENCY</p><h1>Know what your<br><em>money is worth.</em></h1><p>Convert a travel budget before you go, then leave room for card fees, cash exchange margins and changing rates.</p></div></section>
+<div class="currency-wrap">
+<div class="currency-grid">
+<section class="currency-card" aria-labelledby="converter-title">
+<p class="eyebrow">LIVE CONVERTER</p><h2 id="converter-title">Convert travel money.</h2>
+<form id="currencyForm" class="currency-form">
+<label class="currency-amount">AMOUNT<input id="amount" type="number" min="0.01" step="0.01" value="100" inputmode="decimal"></label>
+<label>FROM<select id="from"></select></label>
+<label>TO<select id="to"></select></label>
+</form>
+<div class="currency-quick" aria-label="Quick amounts"><button type="button" data-amount="50">50</button><button type="button" data-amount="100">100</button><button type="button" data-amount="500">500</button><button type="button" data-amount="1000">1,000</button></div>
+<div class="currency-result" aria-live="polite"><small>Estimated conversion</small><strong id="result">—</strong><div class="currency-meta" id="rate">Loading current rate…</div></div>
+<div class="currency-actions"><button type="button" id="swap">Swap currencies ↕</button><button type="button" class="secondary" id="refresh">Refresh rate</button></div>
+<div class="currency-status" id="status"></div>
+<p class="currency-note">Rates are indicative market reference rates. Your bank, card network, ATM or exchange bureau may use a different rate and may add fees.</p>
+</section>
+<aside class="currency-card">
+<p class="eyebrow">TRAVEL MONEY</p><h2>Before you exchange.</h2>
+<div class="currency-rate-list">
+<div class="currency-rate"><span>Card payments</span><b>Check foreign transaction fees</b></div>
+<div class="currency-rate"><span>Cash</span><b>Compare the final amount received</b></div>
+<div class="currency-rate"><span>ATMs</span><b>Check withdrawal and conversion fees</b></div>
+<div class="currency-rate"><span>Budget</span><b>Keep a small rate buffer</b></div>
+</div>
+<p class="currency-note">For trip budgeting, use this page with Frontier's <a href="/costs.html">cost planner</a>. For prices, taxes, fees or payments that matter to a booking, confirm the amount with the provider at the time of purchase.</p>
+<a class="btn orange" href="/costs.html">Open budget planner →</a>
+</aside>
+</div>
+</div>
+</main>
+<script>
+(function(){
+const currencies={USD:'US Dollar',EUR:'Euro',GBP:'British Pound',INR:'Indian Rupee',JPY:'Japanese Yen',AUD:'Australian Dollar',CAD:'Canadian Dollar',CHF:'Swiss Franc',SGD:'Singapore Dollar',AED:'UAE Dirham',THB:'Thai Baht',IDR:'Indonesian Rupiah',ZAR:'South African Rand',NZD:'New Zealand Dollar'};
+const from=document.getElementById('from'),to=document.getElementById('to'),amount=document.getElementById('amount'),result=document.getElementById('result'),rate=document.getElementById('rate'),status=document.getElementById('status');
+Object.entries(currencies).forEach(([code,name])=>{from.add(new Option(code+' — '+name,code));to.add(new Option(code+' — '+name,code));});
+from.value='USD';to.value='INR';
+let controller=null;
+function fmt(n,code){return new Intl.NumberFormat(undefined,{style:'currency',currency:code,maximumFractionDigits:code==='IDR'||code==='JPY'||code==='INR'?0:2}).format(n);}
+async function convert(){
+ const a=Number(amount.value); if(!(a>0)){result.textContent='Enter an amount';rate.textContent='';return;}
+ if(from.value===to.value){result.textContent=fmt(a,to.value);rate.textContent='1 '+from.value+' = 1 '+to.value;status.textContent='';return;}
+ if(controller)controller.abort(); controller=new AbortController();
+ result.textContent='…';status.textContent='Fetching reference rate…';
+ try{
+  const res=await fetch('https://api.frankfurter.app/latest?from='+encodeURIComponent(from.value)+'&to='+encodeURIComponent(to.value),{signal:controller.signal});
+  if(!res.ok)throw new Error('Rate service unavailable');
+  const data=await res.json(); const r=data.rates[to.value];
+  if(!r)throw new Error('Rate unavailable');
+  result.textContent=fmt(a*r,to.value);rate.textContent='1 '+from.value+' = '+new Intl.NumberFormat(undefined,{maximumFractionDigits:6}).format(r)+' '+to.value+' · reference rate '+data.date;
+  status.textContent='Updated '+data.date+'.';
+ }catch(e){if(e.name!=='AbortError'){result.textContent='Rate unavailable';rate.textContent='Try again shortly or use your bank/card rate.';status.textContent='The live reference-rate service could not be reached.';}}
+}
+[from,to,amount].forEach(el=>el.addEventListener('change',convert));amount.addEventListener('input',convert);
+document.querySelectorAll('[data-amount]').forEach(b=>b.addEventListener('click',()=>{amount.value=b.dataset.amount;convert();}));
+document.getElementById('swap').addEventListener('click',()=>{const x=from.value;from.value=to.value;to.value=x;convert();});
+document.getElementById('refresh').addEventListener('click',convert);
+convert();
+})();
+</script>
+</body></html>

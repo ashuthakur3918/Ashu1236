@@ -1,0 +1,9 @@
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS phone text;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS start_date date;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS end_date date;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS group_size text;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS starting_location text;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS budget text;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS travel_style text;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS interests text;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS trip_source text;

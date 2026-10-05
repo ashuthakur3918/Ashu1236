@@ -1,0 +1,31 @@
+[ai]
+required = true
+description = "AI travel assistant for global trip planning, destinations, stays, experiences, food and events."
+
+[auth]
+enabled = true
+providers = ["email"]
+signup = "open"
+hosted_login = true
+login_path = "/login"
+
+[[secret]]
+name = "OPENWEATHER_API_KEY_PRIMARY"
+description = "Primary OpenWeather API key for live Himachal weather."
+expose = true
+
+[[secret]]
+name = "OPENWEATHER_API_KEY_FALLBACK"
+description = "Fallback OpenWeather API key for live Himachal weather."
+expose = true
+[db.tables.saved_items]
+read = "own"
+write = "own"
+
+[db.tables.traveler_profiles]
+read = "own"
+write = "own"
+
+[db.tables.trip_plans]
+read = "own"
+write = "own"

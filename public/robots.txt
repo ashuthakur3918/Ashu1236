@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /cms-preview.html
+Disallow: /api/
+Sitemap: https://frontier-host.hatchable.site/sitemap.xml
